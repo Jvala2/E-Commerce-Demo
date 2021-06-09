@@ -34,13 +34,14 @@ Product.init(
         isInt: true
       },
     },
-    category_id: Datatypes.INTEGER,
+    category_id: {
+      type: Datatypes.INTEGER,
     allowNull: false,
     references: {
       model: "category",
       key: "id"
     },
-
+  },
   },
 
   {
